@@ -8,14 +8,14 @@ const PORT = 3000;
 const app = express();
 
 app.use(express.json());
-// app.use(cors());
+app.use(cors());
 
-app.use(
-  cors({
-    origin: "https://pocket-notes-react-test.vercel.app/",
-    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
-  })
-);
+// app.use(
+//   cors({
+//     origin: "https://pocket-notes-react-test.vercel.app/notes",
+//     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+//   })
+// );
 
 dot.config().parsed;
 
